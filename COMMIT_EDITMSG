@@ -1,0 +1,16 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	renamed:    LICENSE -> antikeylogger/LICENSE
+#	renamed:    README.md -> antikeylogger/README.md
+#	new file:   antikeylogger/app.py
+#	new file:   antikeylogger/requirements.txt
+#	new file:   antikeylogger/static/script.js
+#	new file:   antikeylogger/static/styles.css
+#	new file:   antikeylogger/templates/index.html
+#
