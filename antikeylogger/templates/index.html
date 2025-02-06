@@ -3,17 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keylogger Detector</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Malware Scanner</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Upload a File to Check for Keyloggers</h2>
-    <div class="container">
-        <input type="file" id="fileInput">
-        <button onclick="uploadFile()">Scan File</button>
-        <p id="result"></p>
+    <div class="scanner-container">
+        <h1>🛡️ Malware Scanner</h1>
+        <p>Upload a file to check for potential threats.</p>
+
+        <div class="upload-box">
+            <label for="fileInput" class="file-label">📂 Choose File</label>
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">🔍 Scan Now</button>
+        </div>
+
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div id="result-box">
+            <p id="result">Awaiting file upload...</p>
+        </div>
     </div>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <footer>
+        <p>Contact: chrystiellam@gmail.com | © 2025 Malware Scanner</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
