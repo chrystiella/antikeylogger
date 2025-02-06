@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Scanner Box */
+.scanner-container {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 255, 170, 0.4);
+    width: 400px;
+    text-align: center;
+    border: 1px solid #22d3ee;
+    position: relative;
+}
+
+/* Headings & Text */
+h1 {
+    font-size: 24px;
+    color: #22d3ee;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+/* Upload Box */
+.upload-box {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* File Input Styling */
+.file-label {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.file-label:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+input[type="file"] {
+    display: none; /* Hide default file input */
+}
+
+/* Scan Button */
+button {
+    background-color: #22d3ee;
+    color: #0f172a;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0fffc0;
+    transform: scale(1.05);
+}
+
+/* Progress Bar */
+#progress-container {
+    width: 100%;
+    height: 8px;
+    background: #2d3748;
+    border-radius: 5px;
+    margin-top: 15px;
+    overflow: hidden;
+    display: none;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #22d3ee;
+    transition: width 0.4s;
+}
+
+/* Result Box */
+#result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Safe and Danger Messages */
+.safe {
+    color: #10b981;
+    background-color: #064e3b;
+    border: 1px solid #34d399;
+}
+
+.danger {
+    color: #f87171;
+    background-color: #7f1d1d;
+    border: 1px solid #fca5a5;
+}
+
+/* Footer */
+footer {
+    background: #1e293b;
+    padding: 10px;
+    color: #9ca3af;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
