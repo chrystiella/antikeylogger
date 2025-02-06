@@ -9,9 +9,6 @@ function uploadFile() {
         return;
     }
 
-    let formData = new FormData();
-    formData.append("file", fileInput);
-
     // Reset UI
     resultElement.innerText = "Scanning...";
     resultElement.className = "";
@@ -28,6 +25,9 @@ function uploadFile() {
             clearInterval(interval);
         }
     }, 500);
+
+    let formData = new FormData();
+    formData.append("file", fileInput);
 
     fetch("/upload", {
         method: "POST",
