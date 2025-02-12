@@ -1,4 +1,4 @@
-🛡️ Malware Scanner
+# 🛡️ Malware Scanner
 
 📌 Description
 This Malware Scanner is a web-based tool that allows users to upload files and check for potential threats. It features a modern UI, a progress bar animation, and a real-time result display to indicate whether a file is safe or suspicious.
